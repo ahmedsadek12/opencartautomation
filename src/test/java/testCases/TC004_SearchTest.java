@@ -37,48 +37,5 @@ public class TC004_SearchTest extends BaseTest {
 		}
 		
 	}
-	
-//	other login scenarios
-//	@Test(dataProvider="LoginData", dataProviderClass=DataProviders.class)
-//	public void invalidLogin(String email, String password, String testResult) {
-//
-////		Home Page
-//		HomePage homepage = new HomePage(driver);
-//		homepage.clickOnMyAcc();
-//		homepage.clickOnLogin();
-////		Login Page
-//		LoginPage loginpage = new LoginPage(driver);
-//		String loginPageTitle = driver.getTitle();
-//		loginpage.enterEmail(email);
-//		loginpage.enterPwd(password);
-//		loginpage.login();
-//		MyAccountPage myaccountpage = new MyAccountPage(driver);
-//		String currPageTitle = driver.getTitle();
-//		
-////		boolean targetPage =  myaccountpage.checkHeader();
-//		
-//		if(testResult.equalsIgnoreCase("valid")) {
-//			if (!loginPageTitle.equals(currPageTitle)) {
-//				myaccountpage.clickOnLogout();
-//				Assert.assertTrue(true);
-//			}
-//			else {
-//				System.out.println("failed at email " + email + "and password " + password);
-//				Assert.assertTrue(false);
-//			}
-//		}
-//		
-//		if(testResult.equalsIgnoreCase("invalid")) {
-//			if(loginPageTitle.equals(currPageTitle)) {
-//				Assert.assertTrue(true);
-//			}
-//			else {
-//				myaccountpage.clickOnLogout();
-//				System.out.println("failed at email " + email + " and password " + password);
-//				Assert.assertTrue(false);
-//			}
-//		}
-//
-//	}
 }
 

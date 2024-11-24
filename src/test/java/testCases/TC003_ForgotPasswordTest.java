@@ -47,20 +47,3 @@ public class TC003_ForgotPasswordTest extends BaseTest {
 
 	}
 }
-
-//	@Test
-//	public void ForgortPassword() {
-//
-////		Home Page
-//		HomePage homepage = new HomePage(driver);
-//		homepage.clickOnMyAcc();
-//		homepage.clickOnLogin();
-////		Login Page
-//		LoginPage loginpage = new LoginPage(driver);
-//		loginpage.clickForgotPwdLink();
-//		ForgortPasswordPage forgortpasswordpage = new ForgortPasswordPage(driver);
-//		forgortpasswordpage.enterEmail(properties.getProperty("email"));
-//		forgortpasswordpage.ClickSendNewPwd();
-//		Assert.assertEquals("An email with a confirmation link has been sent your email address.", loginpage.getForgotPwdConfirmMsg());
-//	}
-//}

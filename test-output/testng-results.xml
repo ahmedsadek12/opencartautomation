@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="25" passed="23" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-11-16T14:42:56 EET" name="Suite" finished-at="2024-11-16T14:43:11 EET" duration-ms="14879">
+  <suite started-at="2024-11-24T17:40:28 EET" name="Suite" finished-at="2024-11-24T17:43:01 EET" duration-ms="152474">
     <groups>
     </groups>
-    <test started-at="2024-11-16T14:42:56 EET" name="Register" finished-at="2024-11-16T14:43:11 EET" duration-ms="14879">
-      <class name="testCases.TC006_FeaturedProducts">
-        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC006_FeaturedProducts@293d0107]" started-at="2024-11-16T14:42:57 EET" name="setUp" finished-at="2024-11-16T14:43:07 EET" duration-ms="9742" status="PASS">
+    <test started-at="2024-11-24T17:40:28 EET" name="Register" finished-at="2024-11-24T17:43:01 EET" duration-ms="152474">
+      <class name="testCases.TC004_SearchTest">
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC004_SearchTest@2756c0a7]" started-at="2024-11-24T17:41:45 EET" name="setUp" finished-at="2024-11-24T17:41:52 EET" duration-ms="7414" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -23,15 +23,622 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="AddFeaturedProductToCompare()[pri:2, instance:testCases.TC006_FeaturedProducts@293d0107]" started-at="2024-11-16T14:43:07 EET" name="AddFeaturedProductToCompare" finished-at="2024-11-16T14:43:10 EET" duration-ms="3628" status="PASS">
+        <test-method signature="invalidSearch(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC004_SearchTest@2756c0a7]" started-at="2024-11-24T17:41:53 EET" name="invalidSearch" data-provider="SearchData" finished-at="2024-11-24T17:42:04 EET" duration-ms="11131" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[omar]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[invalid]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidSearch -->
+        <test-method signature="invalidSearch(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC004_SearchTest@2756c0a7]" started-at="2024-11-24T17:42:04 EET" name="invalidSearch" data-provider="SearchData" finished-at="2024-11-24T17:42:15 EET" duration-ms="11080" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[hhgkgkg]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[invalid]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidSearch -->
+        <test-method signature="invalidSearch(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC004_SearchTest@2756c0a7]" started-at="2024-11-24T17:42:15 EET" name="invalidSearch" data-provider="SearchData" finished-at="2024-11-24T17:42:26 EET" duration-ms="11432" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[12445]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[invalid]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidSearch -->
+        <test-method signature="invalidSearch(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC004_SearchTest@2756c0a7]" started-at="2024-11-24T17:42:26 EET" name="invalidSearch" data-provider="SearchData" finished-at="2024-11-24T17:42:29 EET" duration-ms="2586" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[invalid]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at org.testng.Assert.assertTrue(Assert.java:67)
+at testCases.TC004_SearchTest.invalidSearch(TC004_SearchTest.java:35)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidSearch -->
+        <test-method signature="invalidSearch(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC004_SearchTest@2756c0a7]" started-at="2024-11-24T17:42:29 EET" name="invalidSearch" data-provider="SearchData" finished-at="2024-11-24T17:42:30 EET" duration-ms="1018" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[     ]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[invalid]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at org.testng.Assert.assertTrue(Assert.java:67)
+at testCases.TC004_SearchTest.invalidSearch(TC004_SearchTest.java:35)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidSearch -->
+        <test-method signature="validSearch()[pri:2, instance:testCases.TC004_SearchTest@2756c0a7]" started-at="2024-11-24T17:42:30 EET" name="validSearch" finished-at="2024-11-24T17:42:31 EET" duration-ms="1247" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validSearch -->
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:testCases.TC004_SearchTest@2756c0a7]" started-at="2024-11-24T17:42:31 EET" name="TearDown" finished-at="2024-11-24T17:42:33 EET" duration-ms="1255" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+      </class> <!-- testCases.TC004_SearchTest -->
+      <class name="testCases.TC005_SelectCurrency">
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC005_SelectCurrency@350ec41e]" started-at="2024-11-24T17:42:33 EET" name="setUp" finished-at="2024-11-24T17:42:42 EET" duration-ms="9294" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Windows]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="ConfirmEuroCurrency()[pri:2, instance:testCases.TC005_SelectCurrency@350ec41e]" started-at="2024-11-24T17:42:42 EET" name="ConfirmEuroCurrency" finished-at="2024-11-24T17:42:43 EET" duration-ms="1518" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ConfirmEuroCurrency -->
+        <test-method signature="ConfirmPoundSterlingCurrency()[pri:2, instance:testCases.TC005_SelectCurrency@350ec41e]" started-at="2024-11-24T17:42:43 EET" name="ConfirmPoundSterlingCurrency" finished-at="2024-11-24T17:42:45 EET" duration-ms="1251" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ConfirmPoundSterlingCurrency -->
+        <test-method signature="ConfirmUSDCurrency()[pri:2, instance:testCases.TC005_SelectCurrency@350ec41e]" started-at="2024-11-24T17:42:45 EET" name="ConfirmUSDCurrency" finished-at="2024-11-24T17:42:46 EET" duration-ms="1270" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ConfirmUSDCurrency -->
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:testCases.TC005_SelectCurrency@350ec41e]" started-at="2024-11-24T17:42:46 EET" name="TearDown" finished-at="2024-11-24T17:42:47 EET" duration-ms="771" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+      </class> <!-- testCases.TC005_SelectCurrency -->
+      <class name="testCases.TC001_AccountRegisterTest">
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC001_AccountRegisterTest@83298d7]" started-at="2024-11-24T17:40:29 EET" name="setUp" finished-at="2024-11-24T17:40:37 EET" duration-ms="8218" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Windows]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="invalidRegister(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.TC001_AccountRegisterTest@83298d7]" started-at="2024-11-24T17:40:41 EET" name="invalidRegister" data-provider="registerData" finished-at="2024-11-24T17:40:47 EET" duration-ms="6080" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Ahmed]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[ali]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[test1@gmail.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[123456]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[123456]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[12345]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidRegister -->
+        <test-method signature="invalidRegister(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.TC001_AccountRegisterTest@83298d7]" started-at="2024-11-24T17:40:47 EET" name="invalidRegister" data-provider="registerData" finished-at="2024-11-24T17:40:51 EET" duration-ms="3590" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[dkgk]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[gfgklf]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[test1gmail.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[123456]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[123456]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[123456]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidRegister -->
+        <test-method signature="invalidRegister(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.TC001_AccountRegisterTest@83298d7]" started-at="2024-11-24T17:40:51 EET" name="invalidRegister" data-provider="registerData" finished-at="2024-11-24T17:40:54 EET" duration-ms="3290" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[qwer]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[qett]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[sadeka933@gmail.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[123456]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[123456]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[123456]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidRegister -->
+        <test-method signature="invalidRegister(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.TC001_AccountRegisterTest@83298d7]" started-at="2024-11-24T17:40:54 EET" name="invalidRegister" data-provider="registerData" finished-at="2024-11-24T17:40:57 EET" duration-ms="2698" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[nmkggl]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[test@123]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[dkdls@]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[123456]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[123456]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[123456]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidRegister -->
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:testCases.TC001_AccountRegisterTest@83298d7]" started-at="2024-11-24T17:40:57 EET" name="TearDown" finished-at="2024-11-24T17:40:58 EET" duration-ms="896" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+      </class> <!-- testCases.TC001_AccountRegisterTest -->
+      <class name="testCases.TC002_LoginTest">
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC002_LoginTest@7d3430a7]" started-at="2024-11-24T17:40:58 EET" name="setUp" finished-at="2024-11-24T17:41:05 EET" duration-ms="7179" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Windows]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="Login(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.TC002_LoginTest@7d3430a7]" started-at="2024-11-24T17:41:06 EET" name="Login" data-provider="LoginData" finished-at="2024-11-24T17:41:09 EET" duration-ms="2761" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[test1@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123456]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[invalid]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login -->
+        <test-method signature="Login(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.TC002_LoginTest@7d3430a7]" started-at="2024-11-24T17:41:09 EET" name="Login" data-provider="LoginData" finished-at="2024-11-24T17:41:11 EET" duration-ms="2073" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[test1gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123456]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[invalid]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login -->
+        <test-method signature="Login(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.TC002_LoginTest@7d3430a7]" started-at="2024-11-24T17:41:11 EET" name="Login" data-provider="LoginData" finished-at="2024-11-24T17:41:13 EET" duration-ms="2216" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[test1@gmail]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123456]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[invalid]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login -->
+        <test-method signature="Login(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.TC002_LoginTest@7d3430a7]" started-at="2024-11-24T17:41:13 EET" name="Login" data-provider="LoginData" finished-at="2024-11-24T17:41:18 EET" duration-ms="4209" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[sadeka933@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[test@123]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[valid]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login -->
+        <test-method signature="Login(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.TC002_LoginTest@7d3430a7]" started-at="2024-11-24T17:41:18 EET" name="Login" data-provider="LoginData" finished-at="2024-11-24T17:41:21 EET" duration-ms="3044" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[test3@gm]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123456]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[invalid]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login -->
+        <test-method signature="validLogin()[pri:0, instance:testCases.TC002_LoginTest@7d3430a7]" started-at="2024-11-24T17:41:21 EET" name="validLogin" finished-at="2024-11-24T17:41:24 EET" duration-ms="3628" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validLogin -->
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:testCases.TC002_LoginTest@7d3430a7]" started-at="2024-11-24T17:41:24 EET" name="TearDown" finished-at="2024-11-24T17:41:25 EET" duration-ms="783" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+      </class> <!-- testCases.TC002_LoginTest -->
+      <class name="testCases.TC006_FeaturedProducts">
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC006_FeaturedProducts@69637b10]" started-at="2024-11-24T17:42:47 EET" name="setUp" finished-at="2024-11-24T17:42:54 EET" duration-ms="7414" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Windows]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="AddFeaturedProductToCart()[pri:2, instance:testCases.TC006_FeaturedProducts@69637b10]" started-at="2024-11-24T17:42:54 EET" name="AddFeaturedProductToCart" finished-at="2024-11-24T17:42:56 EET" duration-ms="2204" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddFeaturedProductToCart -->
+        <test-method signature="AddFeaturedProductToCompare()[pri:2, instance:testCases.TC006_FeaturedProducts@69637b10]" started-at="2024-11-24T17:42:56 EET" name="AddFeaturedProductToCompare" finished-at="2024-11-24T17:43:00 EET" duration-ms="3720" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AddFeaturedProductToCompare -->
-        <test-method is-config="true" signature="TearDown()[pri:0, instance:testCases.TC006_FeaturedProducts@293d0107]" started-at="2024-11-16T14:43:10 EET" name="TearDown" finished-at="2024-11-16T14:43:11 EET" duration-ms="823" status="PASS">
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:testCases.TC006_FeaturedProducts@69637b10]" started-at="2024-11-24T17:43:00 EET" name="TearDown" finished-at="2024-11-24T17:43:01 EET" duration-ms="605" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TearDown -->
       </class> <!-- testCases.TC006_FeaturedProducts -->
+      <class name="testCases.TC003_ForgotPasswordTest">
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC003_ForgotPasswordTest@6f603e89]" started-at="2024-11-24T17:41:25 EET" name="setUp" finished-at="2024-11-24T17:41:32 EET" duration-ms="6851" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Windows]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="ForgortPassword(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC003_ForgotPasswordTest@6f603e89]" started-at="2024-11-24T17:41:33 EET" name="ForgortPassword" data-provider="ForgotPwdData" finished-at="2024-11-24T17:41:36 EET" duration-ms="3531" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[sadeka933@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[valid]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ForgortPassword -->
+        <test-method signature="ForgortPassword(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC003_ForgotPasswordTest@6f603e89]" started-at="2024-11-24T17:41:36 EET" name="ForgortPassword" data-provider="ForgotPwdData" finished-at="2024-11-24T17:41:39 EET" duration-ms="2564" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[abgftst@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[invalid]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ForgortPassword -->
+        <test-method signature="ForgortPassword(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC003_ForgotPasswordTest@6f603e89]" started-at="2024-11-24T17:41:39 EET" name="ForgortPassword" data-provider="ForgotPwdData" finished-at="2024-11-24T17:41:41 EET" duration-ms="2613" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[fjddjgmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[invalid]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ForgortPassword -->
+        <test-method signature="ForgortPassword(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC003_ForgotPasswordTest@6f603e89]" started-at="2024-11-24T17:41:41 EET" name="ForgortPassword" data-provider="ForgotPwdData" finished-at="2024-11-24T17:41:44 EET" duration-ms="2632" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ ]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[invalid]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ForgortPassword -->
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:testCases.TC003_ForgotPasswordTest@6f603e89]" started-at="2024-11-24T17:41:44 EET" name="TearDown" finished-at="2024-11-24T17:41:45 EET" duration-ms="625" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+      </class> <!-- testCases.TC003_ForgotPasswordTest -->
     </test> <!-- Register -->
   </suite> <!-- Suite -->
 </testng-results>

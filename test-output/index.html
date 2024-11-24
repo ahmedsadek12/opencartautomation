@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-passed">Suite</span>
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,7 +92,26 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">25 methods, 2 failed,   23 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.TC004_SearchTest" class="method navigator-link" hash-for-method="invalidSearch(     , invalid)">invalidSearch(     , invalid)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.TC004_SearchTest" class="method navigator-link" hash-for-method="invalidSearch(0, invalid)">invalidSearch(0, invalid)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -103,7 +122,117 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.TC006_FeaturedProducts" class="method navigator-link" hash-for-method="AddFeaturedProductToCart">AddFeaturedProductToCart</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="testCases.TC006_FeaturedProducts" class="method navigator-link" hash-for-method="AddFeaturedProductToCompare">AddFeaturedProductToCompare</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.TC005_SelectCurrency" class="method navigator-link" hash-for-method="ConfirmEuroCurrency">ConfirmEuroCurrency</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.TC005_SelectCurrency" class="method navigator-link" hash-for-method="ConfirmPoundSterlingCurrency">ConfirmPoundSterlingCurrency</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.TC005_SelectCurrency" class="method navigator-link" hash-for-method="ConfirmUSDCurrency">ConfirmUSDCurrency</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.TC003_ForgotPasswordTest" class="method navigator-link" hash-for-method="ForgortPassword( , invalid)">ForgortPassword( , invalid)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.TC003_ForgotPasswordTest" class="method navigator-link" hash-for-method="ForgortPassword(fjddjgmail.com, invalid)">ForgortPassword(fjddjgmail.com, invalid)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.TC003_ForgotPasswordTest" class="method navigator-link" hash-for-method="ForgortPassword(abgftst@gmail.com, invalid)">ForgortPassword(abgftst@gmail.com, invalid)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.TC003_ForgotPasswordTest" class="method navigator-link" hash-for-method="ForgortPassword(sadeka933@gmail.com, valid)">ForgortPassword(sadeka933@gmail.com, valid)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.TC002_LoginTest" class="method navigator-link" hash-for-method="Login(test1gmail.com, 123456, invalid)">Login(test1gmail.com, 123456, invalid)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.TC002_LoginTest" class="method navigator-link" hash-for-method="Login(sadeka933@gmail.com, test@123, valid)">Login(sadeka933@gmail.com, test@123, valid)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.TC002_LoginTest" class="method navigator-link" hash-for-method="Login(test1@gmail, 123456, invalid)">Login(test1@gmail, 123456, invalid)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.TC002_LoginTest" class="method navigator-link" hash-for-method="Login(test1@gmail.com, 123456, invalid)">Login(test1@gmail.com, 123456, invalid)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.TC002_LoginTest" class="method navigator-link" hash-for-method="Login(test3@gm, 123456, invalid)">Login(test3@gm, 123456, invalid)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.TC001_AccountRegisterTest" class="method navigator-link" hash-for-method="invalidRegister(dkgk, gfgklf, test1gmail.com, 123456, 123456, 123456)">invalidRegister(dkgk, gfgklf, test1gmail.com, 123456, 123456, 123456)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.TC001_AccountRegisterTest" class="method navigator-link" hash-for-method="invalidRegister(nmkggl, test@123, dkdls@, 123456, 123456, 123456)">invalidRegister(nmkggl, test@123, dkdls@, 123456, 123456, 123456)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.TC001_AccountRegisterTest" class="method navigator-link" hash-for-method="invalidRegister(qwer, qett, sadeka933@gmail.com, 123456, 123456, 123456)">invalidRegister(qwer, qett, sadeka933@gmail.com, 123456, 123456, 123456)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.TC001_AccountRegisterTest" class="method navigator-link" hash-for-method="invalidRegister(Ahmed, ali, test1@gmail.com, 123456, 123456, 12345)">invalidRegister(Ahmed, ali, test1@gmail.com, 123456, 123456, 12345)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.TC004_SearchTest" class="method navigator-link" hash-for-method="invalidSearch(omar, invalid)">invalidSearch(omar, invalid)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.TC004_SearchTest" class="method navigator-link" hash-for-method="invalidSearch(12445, invalid)">invalidSearch(12445, invalid)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.TC004_SearchTest" class="method navigator-link" hash-for-method="invalidSearch(hhgkgkg, invalid)">invalidSearch(hhgkgkg, invalid)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.TC002_LoginTest" class="method navigator-link" hash-for-method="validLogin">validLogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.TC004_SearchTest" class="method navigator-link" hash-for-method="validSearch">validSearch</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -118,6 +247,69 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">testCases.TC004_SearchTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="invalidSearch(     , invalid)">
+                  </a> <!-- invalidSearch(     , invalid) -->
+                  <span class="method-name">invalidSearch</span>
+                  <span class="parameters">(     ,invalid)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at testCases.TC004_SearchTest.invalidSearch(TC004_SearchTest.java:35)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="invalidSearch(0, invalid)">
+                  </a> <!-- invalidSearch(0, invalid) -->
+                  <span class="method-name">invalidSearch</span>
+                  <span class="parameters">(0,invalid)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at testCases.TC004_SearchTest.invalidSearch(TC004_SearchTest.java:35)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testCases.TC005_SelectCurrency</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="ConfirmEuroCurrency">
+                  </a> <!-- ConfirmEuroCurrency -->
+                  <span class="method-name">ConfirmEuroCurrency</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ConfirmPoundSterlingCurrency">
+                  </a> <!-- ConfirmPoundSterlingCurrency -->
+                  <span class="method-name">ConfirmPoundSterlingCurrency</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ConfirmUSDCurrency">
+                  </a> <!-- ConfirmUSDCurrency -->
+                  <span class="method-name">ConfirmUSDCurrency</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -126,9 +318,190 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
+                  <a name="AddFeaturedProductToCart">
+                  </a> <!-- AddFeaturedProductToCart -->
+                  <span class="method-name">AddFeaturedProductToCart</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="AddFeaturedProductToCompare">
                   </a> <!-- AddFeaturedProductToCompare -->
                   <span class="method-name">AddFeaturedProductToCompare</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testCases.TC002_LoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Login(test1gmail.com, 123456, invalid)">
+                  </a> <!-- Login(test1gmail.com, 123456, invalid) -->
+                  <span class="method-name">Login</span>
+                  <span class="parameters">(test1gmail.com,123456,invalid)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Login(sadeka933@gmail.com, test@123, valid)">
+                  </a> <!-- Login(sadeka933@gmail.com, test@123, valid) -->
+                  <span class="method-name">Login</span>
+                  <span class="parameters">(sadeka933@gmail.com,test@123,valid)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Login(test1@gmail, 123456, invalid)">
+                  </a> <!-- Login(test1@gmail, 123456, invalid) -->
+                  <span class="method-name">Login</span>
+                  <span class="parameters">(test1@gmail,123456,invalid)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Login(test1@gmail.com, 123456, invalid)">
+                  </a> <!-- Login(test1@gmail.com, 123456, invalid) -->
+                  <span class="method-name">Login</span>
+                  <span class="parameters">(test1@gmail.com,123456,invalid)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Login(test3@gm, 123456, invalid)">
+                  </a> <!-- Login(test3@gm, 123456, invalid) -->
+                  <span class="method-name">Login</span>
+                  <span class="parameters">(test3@gm,123456,invalid)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validLogin">
+                  </a> <!-- validLogin -->
+                  <span class="method-name">validLogin</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testCases.TC004_SearchTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="invalidSearch(omar, invalid)">
+                  </a> <!-- invalidSearch(omar, invalid) -->
+                  <span class="method-name">invalidSearch</span>
+                  <span class="parameters">(omar,invalid)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="invalidSearch(12445, invalid)">
+                  </a> <!-- invalidSearch(12445, invalid) -->
+                  <span class="method-name">invalidSearch</span>
+                  <span class="parameters">(12445,invalid)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="invalidSearch(hhgkgkg, invalid)">
+                  </a> <!-- invalidSearch(hhgkgkg, invalid) -->
+                  <span class="method-name">invalidSearch</span>
+                  <span class="parameters">(hhgkgkg,invalid)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validSearch">
+                  </a> <!-- validSearch -->
+                  <span class="method-name">validSearch</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testCases.TC001_AccountRegisterTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="invalidRegister(dkgk, gfgklf, test1gmail.com, 123456, 123456, 123456)">
+                  </a> <!-- invalidRegister(dkgk, gfgklf, test1gmail.com, 123456, 123456, 123456) -->
+                  <span class="method-name">invalidRegister</span>
+                  <span class="parameters">(dkgk,gfgklf,test1gmail.com,123456,123456,123456)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="invalidRegister(nmkggl, test@123, dkdls@, 123456, 123456, 123456)">
+                  </a> <!-- invalidRegister(nmkggl, test@123, dkdls@, 123456, 123456, 123456) -->
+                  <span class="method-name">invalidRegister</span>
+                  <span class="parameters">(nmkggl,test@123,dkdls@,123456,123456,123456)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="invalidRegister(qwer, qett, sadeka933@gmail.com, 123456, 123456, 123456)">
+                  </a> <!-- invalidRegister(qwer, qett, sadeka933@gmail.com, 123456, 123456, 123456) -->
+                  <span class="method-name">invalidRegister</span>
+                  <span class="parameters">(qwer,qett,sadeka933@gmail.com,123456,123456,123456)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="invalidRegister(Ahmed, ali, test1@gmail.com, 123456, 123456, 12345)">
+                  </a> <!-- invalidRegister(Ahmed, ali, test1@gmail.com, 123456, 123456, 12345) -->
+                  <span class="method-name">invalidRegister</span>
+                  <span class="parameters">(Ahmed,ali,test1@gmail.com,123456,123456,12345)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testCases.TC003_ForgotPasswordTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="ForgortPassword( , invalid)">
+                  </a> <!-- ForgortPassword( , invalid) -->
+                  <span class="method-name">ForgortPassword</span>
+                  <span class="parameters">( ,invalid)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ForgortPassword(fjddjgmail.com, invalid)">
+                  </a> <!-- ForgortPassword(fjddjgmail.com, invalid) -->
+                  <span class="method-name">ForgortPassword</span>
+                  <span class="parameters">(fjddjgmail.com,invalid)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ForgortPassword(abgftst@gmail.com, invalid)">
+                  </a> <!-- ForgortPassword(abgftst@gmail.com, invalid) -->
+                  <span class="method-name">ForgortPassword</span>
+                  <span class="parameters">(abgftst@gmail.com,invalid)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ForgortPassword(sadeka933@gmail.com, valid)">
+                  </a> <!-- ForgortPassword(sadeka933@gmail.com, valid) -->
+                  <span class="method-name">ForgortPassword</span>
+                  <span class="parameters">(sadeka933@gmail.com,valid)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -150,6 +523,11 @@
     &lt;parameter name=&quot;os&quot; value=&quot;Windows&quot;/&gt;
     &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
     &lt;classes&gt;
+      &lt;class name=&quot;testCases.TC001_AccountRegisterTest&quot;/&gt;
+      &lt;class name=&quot;testCases.TC002_LoginTest&quot;/&gt;
+      &lt;class name=&quot;testCases.TC003_ForgotPasswordTest&quot;/&gt;
+      &lt;class name=&quot;testCases.TC004_SearchTest&quot;/&gt;
+      &lt;class name=&quot;testCases.TC005_SelectCurrency&quot;/&gt;
       &lt;class name=&quot;testCases.TC006_FeaturedProducts&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Register --&gt;
@@ -164,7 +542,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Register (1 class)</span>
+                <span class="test-name">Register (6 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -190,16 +568,112 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(25);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'AddFeaturedProductToCompare')
-data.setCell(0, 2, 'testCases.TC006_FeaturedProducts')
-data.setCell(0, 3, 3628);
+data.setCell(0, 1, 'invalidSearch')
+data.setCell(0, 2, 'testCases.TC004_SearchTest')
+data.setCell(0, 3, 11432);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'invalidSearch')
+data.setCell(1, 2, 'testCases.TC004_SearchTest')
+data.setCell(1, 3, 11131);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'invalidSearch')
+data.setCell(2, 2, 'testCases.TC004_SearchTest')
+data.setCell(2, 3, 11080);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'invalidRegister')
+data.setCell(3, 2, 'testCases.TC001_AccountRegisterTest')
+data.setCell(3, 3, 6080);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'Login')
+data.setCell(4, 2, 'testCases.TC002_LoginTest')
+data.setCell(4, 3, 4209);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'AddFeaturedProductToCompare')
+data.setCell(5, 2, 'testCases.TC006_FeaturedProducts')
+data.setCell(5, 3, 3720);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'validLogin')
+data.setCell(6, 2, 'testCases.TC002_LoginTest')
+data.setCell(6, 3, 3628);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'invalidRegister')
+data.setCell(7, 2, 'testCases.TC001_AccountRegisterTest')
+data.setCell(7, 3, 3590);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'ForgortPassword')
+data.setCell(8, 2, 'testCases.TC003_ForgotPasswordTest')
+data.setCell(8, 3, 3531);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'invalidRegister')
+data.setCell(9, 2, 'testCases.TC001_AccountRegisterTest')
+data.setCell(9, 3, 3290);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'Login')
+data.setCell(10, 2, 'testCases.TC002_LoginTest')
+data.setCell(10, 3, 3044);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'Login')
+data.setCell(11, 2, 'testCases.TC002_LoginTest')
+data.setCell(11, 3, 2761);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'invalidRegister')
+data.setCell(12, 2, 'testCases.TC001_AccountRegisterTest')
+data.setCell(12, 3, 2698);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'ForgortPassword')
+data.setCell(13, 2, 'testCases.TC003_ForgotPasswordTest')
+data.setCell(13, 3, 2632);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'ForgortPassword')
+data.setCell(14, 2, 'testCases.TC003_ForgotPasswordTest')
+data.setCell(14, 3, 2613);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'invalidSearch')
+data.setCell(15, 2, 'testCases.TC004_SearchTest')
+data.setCell(15, 3, 2586);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'ForgortPassword')
+data.setCell(16, 2, 'testCases.TC003_ForgotPasswordTest')
+data.setCell(16, 3, 2564);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'Login')
+data.setCell(17, 2, 'testCases.TC002_LoginTest')
+data.setCell(17, 3, 2216);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'AddFeaturedProductToCart')
+data.setCell(18, 2, 'testCases.TC006_FeaturedProducts')
+data.setCell(18, 3, 2204);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'Login')
+data.setCell(19, 2, 'testCases.TC002_LoginTest')
+data.setCell(19, 3, 2073);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'ConfirmEuroCurrency')
+data.setCell(20, 2, 'testCases.TC005_SelectCurrency')
+data.setCell(20, 3, 1518);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'ConfirmUSDCurrency')
+data.setCell(21, 2, 'testCases.TC005_SelectCurrency')
+data.setCell(21, 3, 1270);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'ConfirmPoundSterlingCurrency')
+data.setCell(22, 2, 'testCases.TC005_SelectCurrency')
+data.setCell(22, 3, 1251);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'validSearch')
+data.setCell(23, 2, 'testCases.TC004_SearchTest')
+data.setCell(23, 3, 1247);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'invalidSearch')
+data.setCell(24, 2, 'testCases.TC004_SearchTest')
+data.setCell(24, 3, 1018);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 3 seconds</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -225,18 +699,173 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">testCases.TC006_FeaturedProducts</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">testCases.TC001_AccountRegisterTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setUp(Windows, chrome)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">AddFeaturedProductToCompare</span>
-                <span class="method-start">9775 ms</span>
+                <span class="method-name">invalidRegister(Ahmed, ali, test1@gmail.com, 123456, 123456, 12345)</span>
+                <span class="method-start">12371 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">invalidRegister(dkgk, gfgklf, test1gmail.com, 123456, 123456, 123456)</span>
+                <span class="method-start">18535 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">invalidRegister(qwer, qett, sadeka933@gmail.com, 123456, 123456, 123456)</span>
+                <span class="method-start">22141 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">invalidRegister(nmkggl, test@123, dkdls@, 123456, 123456, 123456)</span>
+                <span class="method-start">25436 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">TearDown</span>
-                <span class="method-start">13440 ms</span>
+                <span class="method-start">28144 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCases.TC002_LoginTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp(Windows, chrome)</span>
+                <span class="method-start">29043 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">Login(test1@gmail.com, 123456, invalid)</span>
+                <span class="method-start">37426 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Login(test1gmail.com, 123456, invalid)</span>
+                <span class="method-start">40200 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Login(test1@gmail, 123456, invalid)</span>
+                <span class="method-start">42280 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Login(sadeka933@gmail.com, test@123, valid)</span>
+                <span class="method-start">44499 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Login(test3@gm, 123456, invalid)</span>
+                <span class="method-start">48721 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">validLogin</span>
+                <span class="method-start">51769 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">TearDown</span>
+                <span class="method-start">55407 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCases.TC003_ForgotPasswordTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp(Windows, chrome)</span>
+                <span class="method-start">56190 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">ForgortPassword(sadeka933@gmail.com, valid)</span>
+                <span class="method-start">63872 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">ForgortPassword(abgftst@gmail.com, invalid)</span>
+                <span class="method-start">67405 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">ForgortPassword(fjddjgmail.com, invalid)</span>
+                <span class="method-start">69973 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">ForgortPassword( , invalid)</span>
+                <span class="method-start">72589 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">TearDown</span>
+                <span class="method-start">75223 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCases.TC004_SearchTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp(Windows, chrome)</span>
+                <span class="method-start">75848 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">invalidSearch(omar, invalid)</span>
+                <span class="method-start">83645 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">invalidSearch(hhgkgkg, invalid)</span>
+                <span class="method-start">94780 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">invalidSearch(12445, invalid)</span>
+                <span class="method-start">105863 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">invalidSearch(0, invalid)</span>
+                <span class="method-start">117297 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">invalidSearch(     , invalid)</span>
+                <span class="method-start">120043 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">validSearch</span>
+                <span class="method-start">121248 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">TearDown</span>
+                <span class="method-start">122498 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCases.TC005_SelectCurrency</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp(Windows, chrome)</span>
+                <span class="method-start">123754 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">ConfirmEuroCurrency</span>
+                <span class="method-start">133050 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">ConfirmPoundSterlingCurrency</span>
+                <span class="method-start">134571 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">ConfirmUSDCurrency</span>
+                <span class="method-start">135825 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">TearDown</span>
+                <span class="method-start">137096 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCases.TC006_FeaturedProducts</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp(Windows, chrome)</span>
+                <span class="method-start">137868 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">AddFeaturedProductToCart</span>
+                <span class="method-start">145283 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">AddFeaturedProductToCompare</span>
+                <span class="method-start">147489 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">TearDown</span>
+                <span class="method-start">151211 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

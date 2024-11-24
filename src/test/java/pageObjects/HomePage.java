@@ -34,7 +34,7 @@ public class HomePage extends BasePage {
 		desiredProductsAddToWishListBtn.click();
 	}
 	
-	public void addFeaturedProductToCompare(WebElement FeaturedProduct) {
+	public void addFeaturedProductToComparison(WebElement FeaturedProduct) {
 		WebElement desiredProductsCompareBtn = FeaturedProduct.findElement(By.cssSelector("#content .row button:nth-child(3)"));
 		desiredProductsCompareBtn.click();
 	}

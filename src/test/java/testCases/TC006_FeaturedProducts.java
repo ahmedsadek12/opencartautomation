@@ -13,18 +13,19 @@ import utilities.DataProviders;
 public class TC006_FeaturedProducts extends BaseTest {
 	
 	
-//	@Test(priority= 2)
-//	public void AddFeaturedProductToCart() {
-//		String FeaturedProductName = properties.getProperty("FeaturedProductAddedToCart");
-//		HomePage homepage = new HomePage(driver);
-//		WebElement FeaturedProduct = homepage.getFeaturedProductByName(FeaturedProductName);
-//		homepage.addFeaturedProductToCart(FeaturedProduct);
-//		homepage.goToShoppingCart();
-//		CartPage cartpage = new CartPage(driver);
-//		Assert.assertEquals(FeaturedProductName, cartpage.getProductName());
-//	}
-//	
-//	@Test(priority= 2)
+	@Test(priority= 2)
+	public void AddFeaturedProductToCart() {
+		String FeaturedProductName = properties.getProperty("FeaturedProductAddedToCart");
+		HomePage homepage = new HomePage(driver);
+		homepage.goToHomePage();
+		WebElement FeaturedProduct = homepage.getFeaturedProductByName(FeaturedProductName);
+		homepage.addFeaturedProductToCart(FeaturedProduct);
+		homepage.goToShoppingCart();
+		CartPage cartpage = new CartPage(driver);
+		Assert.assertEquals(FeaturedProductName, cartpage.getProductName());
+	}
+	
+//	@Test()
 //	public void AddFeaturedProductToWishList() {
 //		String FeaturedProductName = properties.getProperty("FeaturedProductAddedToWishList");
 //		HomePage homepage = new HomePage(driver);
@@ -37,15 +38,15 @@ public class TC006_FeaturedProducts extends BaseTest {
 //	}
 	
 	@Test(priority= 2)
-	public void AddFeaturedProductToCompare() {
+	public void AddFeaturedProductToCompare() throws InterruptedException {
 		String FeaturedProductName1 = properties.getProperty("FeaturedProductCompare1");
 		String FeaturedProductName2 = properties.getProperty("FeaturedProductCompare2");
 		HomePage homepage = new HomePage(driver);
 		homepage.goToHomePage();
 		WebElement FeaturedProduct1 = homepage.getFeaturedProductByName(FeaturedProductName1);
 		WebElement FeaturedProduct2 = homepage.getFeaturedProductByName(FeaturedProductName2);
-		homepage.addFeaturedProductToCompare(FeaturedProduct1);
-		homepage.addFeaturedProductToCompare(FeaturedProduct2);
+		homepage.addFeaturedProductToComparison(FeaturedProduct1);
+		homepage.addFeaturedProductToComparison(FeaturedProduct2);
 		homepage.goToProductComparisonPage();
 		ProductComparisonPage productcomparisonpage = new ProductComparisonPage(driver);
 		if(FeaturedProductName1.equalsIgnoreCase(productcomparisonpage.getFirstProductName()) &&

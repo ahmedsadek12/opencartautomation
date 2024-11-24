@@ -9,7 +9,7 @@ import utilities.DataProviders;
 
 public class TC001_AccountRegisterTest extends BaseTest {
 //	@Test
-//	public void register() {
+//	public void validRegister() {
 //		HomePage homepage = new HomePage(driver);
 //		homepage.clickOnMyAcc();
 //		homepage.clickOnRegister();
@@ -23,10 +23,18 @@ public class TC001_AccountRegisterTest extends BaseTest {
 //		registerpage.confirmPwd(pwd);
 //		registerpage.checkPrivacy();
 //		registerpage.submitReg();
+//		ConfirmAccPage confirmaccpage = new ConfirmAccPage(driver);
+//			if(confirmaccpage.isAccountCreated()) {
+//				Assert.assertTrue(true);
+//			}
+//			else {
+//				Assert.assertTrue(false);
+//			}
+//		
 //	}
 	
 	@Test(dataProvider="registerData", dataProviderClass=DataProviders.class)
-	public void invalidRegister(String fName, String lName, String mail, String phone, String pwd, String confirmpwd, String result) {
+	public void invalidRegister(String fName, String lName, String mail, String phone, String pwd, String confirmpwd) {
 		HomePage homepage = new HomePage(driver);
 		homepage.clickOnMyAcc();
 		homepage.clickOnRegister();
@@ -40,19 +48,25 @@ public class TC001_AccountRegisterTest extends BaseTest {
 		registerpage.enterPwd(pwd);
 		registerpage.confirmPwd(confirmpwd);
 		registerpage.checkPrivacy();
-		registerpage.clickOnRegister();
+		registerpage.submitReg();
 		ConfirmAccPage confirmaccpage = new ConfirmAccPage(driver);
 		String currTitle = driver.getTitle();
 		System.out.println(currTitle);
-		if(result.equalsIgnoreCase("invalid")) {
-			if(currTitle.equals(regPageTitle)) {
-				Assert.assertTrue(true);
-			}
-			else {
-				confirmaccpage.clickOnLogout();
-				Assert.assertTrue(false);
-			}
+		if(currTitle.equalsIgnoreCase(regPageTitle)) {
+			Assert.assertTrue(true);
 		}
+		else {
+			Assert.assertTrue(false);
+		}
+//			if(confirmaccpage.isAccountCreated()) {  
+//				confirmaccpage.clickOnLogout();
+//				Assert.assertTrue(false);
+//			}
+//			else {
+//				Assert.assertTrue(true);
+//			}
+//		Assert.assertTrue(true);
+//		
 	}
 	
 }

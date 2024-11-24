@@ -1,5 +1,6 @@
 package pageObjects;
 import java.time.Duration;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -32,6 +33,8 @@ public class BasePage {
 	WebElement LinkHomePage;
 	@FindBy(css=".alert-success a:nth-of-type(2)")
 	WebElement LinkProductComparisonPage;
+	@FindBy(css=".alert-success")
+	WebElement ProductComparisonSuccess;
 	
 //	Search Elements
 	@FindBy(css="#search input[type=\"text\"]")
@@ -89,8 +92,9 @@ public class BasePage {
 		LinkHomePage.click();
 	}
 	
-	public void goToProductComparisonPage() {
-		waitElToBeClickable(LinkProductComparisonPage);
+	public void goToProductComparisonPage() throws InterruptedException {
+		waitElToAppear(ProductComparisonSuccess);
+		Thread.sleep(1000);
 		LinkProductComparisonPage.click();
 	}
 	

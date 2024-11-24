@@ -9,25 +9,31 @@ import utilities.DataProviders;
 public class TC002_LoginTest extends BaseTest {
 	
 //	valid login scenario
-//	@Test
-//	public void login() {
-////		Home Page
-//		HomePage homepage = new HomePage(driver);
-//		homepage.clickOnMyAcc();
-//		homepage.clickOnLogin();
-////		Login Page
-//		LoginPage loginpage = new LoginPage(driver);
-//		loginpage.enterEmail(properties.getProperty("email"));
-//		loginpage.enterPwd(properties.getProperty("password"));
-//		loginpage.login();
-////		My Account Page
-//		MyAccountPage myaccountpage = new MyAccountPage(driver);
-//		Assert.assertTrue(myaccountpage.checkHeader());
-//	}
+	@Test
+	public void validLogin() {
+//		Home Page
+		HomePage homepage = new HomePage(driver);
+		homepage.clickOnMyAcc();
+		homepage.clickOnLogin();
+//		Login Page
+		LoginPage loginpage = new LoginPage(driver);
+		loginpage.enterEmail(properties.getProperty("email"));
+		loginpage.enterPwd(properties.getProperty("password"));
+		loginpage.login();
+//		My Account Page
+		MyAccountPage myaccountpage = new MyAccountPage(driver);
+		if(myaccountpage.checkHeader()) {
+			myaccountpage.clickOnLogout();
+			Assert.assertTrue(true);
+		}
+		else {
+			Assert.assertTrue(false);
+		}
+	}
 	
 //	other login scenarios
 	@Test(dataProvider="LoginData", dataProviderClass=DataProviders.class)
-	public void invalidLogin(String email, String password, String testResult) {
+	public void Login(String email, String password, String testResult) {
 
 //		Home Page
 		HomePage homepage = new HomePage(driver);

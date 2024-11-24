@@ -8,13 +8,13 @@
     <parameter name="os" value="Windows"/>
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="testCases.TC006_FeaturedProducts">
+      <class name="testCases.TC004_SearchTest">
         <methods>
           <include name="TearDown"/>
-          <include name="AddFeaturedProductToCompare"/>
+          <include name="invalidSearch" invocation-numbers="3 4"/>
           <include name="setUp"/>
         </methods>
-      </class> <!-- testCases.TC006_FeaturedProducts -->
+      </class> <!-- testCases.TC004_SearchTest -->
     </classes>
   </test> <!-- Register(failed) -->
 </suite> <!-- Failed suite [Suite] -->
